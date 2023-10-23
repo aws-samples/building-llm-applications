@@ -10,7 +10,7 @@ Before you begin, we recommend that you [create and onboard to a SageMaker Studi
 Lab 1: Text Generation
 This lab introduces us to prompt engineering and building a chat assistant using LLMs. To start with, we will need to [deploy an endpoint through Amazon SageMaker JumpStart](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-deploy.html). We have tested the lab with [Falcon-7b-instruct](https://huggingface.co/tiiuae/falcon-7b-instruct) as the LLM. We will go through the basics of using commonly used techniques and tools with LLMs, e.g. Langchain, using retrieval augmented generation (RAG) to bring our own knowledge base into the prompt for the large language model (LLM), and using LLM to understand intent and extract information to be stored into an RDBMS database. 
 
-Lab2: Image Generation
+Lab 2: Image Generation
 This lab walks us through fine tuning a [Stable Diffusion model](https://huggingface.co/stabilityai/stable-diffusion-2-1-base) to bring a custom logo into images e.g. MyCompanyLogo on painting on a wall. We will leverage Amazon SageMaker for the development environment (with SageMaker Studio), training job (with SageMaker Training Job), hyperparameter tuner (with SageMaker Hyperparameter Tuning), access to foundation models (with SageMaker Jumpstart), hosting the model (with SageMaker real-time endpoint) and performing model inference using the endpoint. The Stable Diffusion model deployment will be done programmatically from the notebook.
 
 ## Security
