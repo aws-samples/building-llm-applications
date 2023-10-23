@@ -1,10 +1,17 @@
-##  Building Large Language Models Applications Workshop
+##  Building Large Language Models (LLMs) Applications Workshop
 
-Associated workshop: https://catalog.us-east-1.prod.workshops.aws/workshops/5779400a-9bff-41c5-9f2c-2dcc8b71a374
+This repository contains a collection of labs that equips you with the foundation to build and utilize generative AI applications on AWS. If you are at event with this workshop, you can begin by following the steps provided in the associated workshop link. 
 
-This step by step workshop guidance is to educate ourselves on the foundation of prompt engineering and building chat assistant. It focuses on the basics of using the tools available e.g. Langchain, using retrieval augmented generation (RAG) to bring our own knowledge base into the prompt for the large language model (LLM), and using LLM to understand intent and extract information to be stored into an RDBMS database. It also touches on fine tuning a stable diffusion model to bring a logo into images e.g. MyCompanyLogo on painting on a wall. We will leverage Amazon SageMaker for the development environment (with SageMaker Studio), training job (with SageMaker Training Job), hyperparameter tuner (with SageMaker Hyperparameter Tuning), access to foundation models (with SageMaker Jumpstart), and hosting the model (with SageMaker real-time endpoint). We will use Falcon-7b-instruct for the LLM.
+<b>Associated workshop: https://catalog.us-east-1.prod.workshops.aws/workshops/5779400a-9bff-41c5-9f2c-2dcc8b71a374</b>
 
-To start please follow the steps provided in the associated workshop link above. Lab 1 is about text generation while Lab 2 is about image generation. For Lab 1, you will first need to deploy the Falcon 7b Instruct model through SageMaker Jumpstart. Instruction is provided on the associated workshop page. Then you can follow the notebooks provided in the Lab 1 folder. For Lab 2, you can follow the notebook on the Lab 2 folder. The Stable Diffusion model deployment is done programmatically from the notebook.
+Pre-requisites for running this in your own environment:
+Before you begin, we recommend that you [create and onboard to a SageMaker Studio Domain](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-onboard.html). This requires an AWS Account, and a user with access to create the Domain. You can refer to the pre-requisites [here](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-set-up.html). Once that has been completed, [launch SageMaker Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-launch.html) and open a "System Terminal" from the launcher, from which you can clone this repository: `git clone https://github.com/aws-samples/building-llm-applications.git`.
+
+Lab 1: Text Generation
+This lab introduces us to prompt engineering and building a chat assistant using LLMs. To start with, we will need to [deploy an endpoint through Amazon SageMaker JumpStart](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-deploy.html). We have tested the lab with [Falcon-7b-instruct](https://huggingface.co/tiiuae/falcon-7b-instruct) as the LLM. We will go through the basics of using commonly used techniques and tools with LLMs, e.g. Langchain, using retrieval augmented generation (RAG) to bring our own knowledge base into the prompt for the large language model (LLM), and using LLM to understand intent and extract information to be stored into an RDBMS database. 
+
+Lab2: Image Generation
+This lab walks us through fine tuning a [Stable Diffusion model](https://huggingface.co/stabilityai/stable-diffusion-2-1-base) to bring a custom logo into images e.g. MyCompanyLogo on painting on a wall. We will leverage Amazon SageMaker for the development environment (with SageMaker Studio), training job (with SageMaker Training Job), hyperparameter tuner (with SageMaker Hyperparameter Tuning), access to foundation models (with SageMaker Jumpstart), hosting the model (with SageMaker real-time endpoint) and performing model inference using the endpoint. The Stable Diffusion model deployment will be done programmatically from the notebook.
 
 ## Security
 
